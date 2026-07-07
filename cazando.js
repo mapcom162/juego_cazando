@@ -15,11 +15,14 @@ function iniciar(){
 }
 
 function graficarGato(){
-    ctx.fillStyle="grey"
-    ctx.fillRect(canvas.width/2,canvas.height-ALTO_GATO,ANCHO_GATO,ALTO_GATO);
+    graficarRectangulo(canvas.width/2,canvas.height-ALTO_GATO,ANCHO_GATO,ALTO_GATO,"grey");
 }
 
 function graficarComida(){
-    ctx.fillStyle="brown"
-    ctx.fillRect(0,0,ANCHO_COMIDA,ALTO_COMIDA);
+    graficarRectangulo(0,0,ANCHO_COMIDA,ALTO_COMIDA,"brown");
+}
+
+function graficarRectangulo(x,y,ancho,alto,color){
+    ctx.fillStyle=color
+    ctx.fillRect(x,y,ancho,alto);
 }
