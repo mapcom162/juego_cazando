@@ -90,6 +90,7 @@ function aparecerComida(){
 
 function restarTiempo(){
     tiempo = tiempo - 1;
+    
     mostrarEnSpan("tiempo", tiempo);
     if(puntaje == 6){
         alert("Ganador")
